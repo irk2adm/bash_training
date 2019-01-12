@@ -1,19 +1,8 @@
 #!/bin/bash
-HELLO=Hello 
-hello() {
-    local HELLO=World
-    echo $HELLO
+hello="Hello, world! 1"
+hello() {                           # function hello { 
+    local hello="Hello, world! "
+    echo $hello $1
 }
-echo $HELLO
-hello
-echo $HELLO
-
-# #!/bin/bash 
-# HELLO=Hello 
-# function hello { 
-        # local HELLO=World 
-        # echo $HELLO 
-# } 
-# echo $HELLO 
-# hello 
-# echo $HELLO
+echo $hello
+hello 2
